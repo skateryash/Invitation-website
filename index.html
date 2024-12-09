@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Invitation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="invitation">
+        <form id="invitation-form">
+            <p>Date: <span class="fixed-date">Fixed Date</span></p>
+            <label>Full Name:</label>
+            <input type="text" name="full_name" required>
+
+            <label>Number of Adults:</label>
+            <input type="number" name="adults" min="0" required>
+
+            <label>Number of Children:</label>
+            <input type="number" name="children" min="0" required>
+
+            <p>Will you be attending?</p>
+            <label><input type="radio" name="attendance" value="Yes" required> Pleased to attend</label>
+            <label><input type="radio" name="attendance" value="No"> Unable to attend</label>
+
+            <label>Veg Food:</label>
+            <input type="number" name="veg_food" min="0" required>
+
+            <label>Non-Veg Food:</label>
+            <input type="number" name="non_veg_food" min="0" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
